@@ -1,0 +1,5 @@
+The File class contains methods for manipulating files and their contents. Using methods in this class, you can open and close files, read to and write from them, create and delete them, and check for their existence.
+
+When reading or writing a file, you can use streams (with openRead), random access operations (with open), or convenience methods such as readAsString,
+
+Most methods in this class occur in synchronous and asynchronous pairs, for example, readAsString and readAsStringSync. Unless you have a specific reason for using the synchronous version of a method, prefer the asynchronous version to avoid blocking your program.

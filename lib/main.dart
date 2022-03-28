@@ -1,7 +1,8 @@
-import 'json/json_serialization.dart';
+import 'dart:io';
 
-void main(List<String> args) {
-  final _json = JsonCoder();
-  // _json.decode();
-  // _json.encode();
+void main(List<String> args) async {
+  String s = '';
+  final file = File(r'C:\app_projects\dart_app\assets\files\text.txt');
+  file.readAsString().then((String text) => print(text));
+  print(s);
 }
